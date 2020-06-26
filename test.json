@@ -1,0 +1,8 @@
+{
+        "validate_only": false,
+        "commit_id": "test",
+        "source_url": "https://github.com/test/test",
+        "docker_repo": "content/test",
+        "image_name": "test",
+        "version": "0_0_1"
+}

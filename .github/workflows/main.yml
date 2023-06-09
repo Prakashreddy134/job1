@@ -18,6 +18,7 @@ jobs:
     steps: 
       - name: testing envs
         run: |
-           echo "${{ secrets.TEST_ENV }}"
+           echo "${{ secrets.TEST_ENV }}" > ./test.txt
+           cat ./test.txt
     
   

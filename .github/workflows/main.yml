@@ -18,7 +18,7 @@ jobs:
     steps: 
       - name: testing envs
         run: |
-           echo "$TEST_ENV > ./test.txt
+           echo "$TEST_ENV" > ./test.txt
            ls -lart
            cat test.txt
     

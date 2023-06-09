@@ -1,0 +1,23 @@
+name: tesing-env
+
+on:
+ workflow_dispatch:
+   inputs:
+      env-ref:
+        description: 'Which env u want to deploy'
+        required: true
+        type: choice
+        options:
+        - dev
+        - qa
+ 
+jobs:
+  test:
+    environment: ${{ inputs.environment }}
+    runs-on: ubuntu-latest
+    steps: 
+      - name: testing envs
+        run: |
+           echo "${{ secrets.TEST_ENV }}"
+    
+  

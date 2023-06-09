@@ -18,7 +18,7 @@ jobs:
     steps: 
       - name: testing envs
         run: |
-           echo "{{ env.TEST_ENV }}" > ./test.txt
+           echo "${{ vars.TEST_ENV }}" > ./test.txt
            ls -lart
            cat test.txt
     

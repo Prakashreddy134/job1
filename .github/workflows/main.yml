@@ -19,6 +19,7 @@ jobs:
       - name: testing envs
         run: |
            echo "${{ secrets.TEST_ENV }}" > ./test.txt
-           cat ./test.txt
+           ls -lart
+           cat test.txt
     
   
